@@ -1,0 +1,94 @@
+/* ...existing code... */
+
+body {
+    background: #ffe4f7;
+    color: #a8005c;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+}
+
+.todo-container {
+    background: #fff0fa;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(255, 182, 213, 0.25);
+    padding: 2rem 2.5rem;
+    max-width: 420px;
+    margin: 2.5rem auto;
+}
+
+#todolist, #completed-tasks {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0 1rem 0;
+}
+
+#todolist li, #completed-tasks li {
+    background: #ffd6eb;
+    border: 1px solid #ffb6d5;
+    border-radius: 10px;
+    padding: 0.8rem 1.2rem;
+    margin-bottom: 1rem;
+    color: #a8005c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    box-shadow: 0 1px 4px rgba(255, 182, 213, 0.12);
+    transition: background 0.2s;
+}
+
+#todolist li:hover, #completed-tasks li:hover {
+    background: #ffe4f7;
+}
+
+input[type="text"] {
+    border: 1px solid #ffb6d5;
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    background: #fff0fa;
+    color: #a8005c;
+    font-size: 1rem;
+}
+
+button, input[type="submit"] {
+    background: #ff69b4;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background 0.2s;
+    margin-left: 0.5rem;
+}
+
+button:hover, input[type="submit"]:hover {
+    background: #e75480;
+}
+
+#completed-tasks {
+    margin-top: 2rem;
+}
+
+@media (max-width: 500px) {
+    .todo-container {
+        padding: 1rem;
+        max-width: 95vw;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+}
